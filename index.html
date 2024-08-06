@@ -3,63 +3,99 @@
    <head>
       <title>HMTL Me A Story</title>
       <link rel="stylesheet" href="styles.css">
+      <script src="zoom.js"></script>
    </head>
    <body>
       <!-- Write your HTML in this file! -->
-       <main>
-         <h1>The Majestic Brown Bear</h1>
-         <p>Fun Facts For Our Fuzzy Friends</p>
-         <img src= "Brown Bear Title.jpg" alt= "Bear Waving">
-
-         <article>
-            <header>
-               <h2>Brown Bears Have Cute Little Ears To Let You Know That They Mean No Harm!</h2>
-            </header>
-            <p>If you look closely, Brown Bears have round, fluffy ears that they will let you pet if you just ask. Dont worry, they never turn down pets!</p>
-            <div class="img-magnifier-container">
-               <img id="bearCloseUp" src="Bear Close Up.jpg" width="600" height="400" alt="Girl">
+      <header>
+         <div class="container">
+         <img src="Brown Bear Title.jpg" alt="Snow" style="width:50%;">
+            <div class="top-right">
+               <header id= "mainHeading">The Majestic Brown Bear</header>
             </div>
-            <footer>Zoom in to see the cuteness!</footer>
-         </article>
-         
+            <div class="top-right-blurb">
+               <p id="titleBlurb">Fun Facts About Our Fuzzy Friends</p>
+            </div>
+         </div>
+      </header>
+      <main>
          <article>
-            <header>
-               <h3>Brown Bears Don't Eat Meat...All The Time!</h3>
-            </header>
-            <p>Being mostly vegetarian, Brown Bears sometimes eat nasty fish from a stream so you don't have to!</p>
-            <img src= "Bear Eating.jpg" alt= "Bear in stream about to eat fish">
-            <footer>How Nice of Them!</footer>
-         </article>
+            <section>
+               <header>
+                  <h1>Brown Bears Are Cute And Mean No Harm!</h1>
+               </header>
+               <p id= "Cutie">If you look closely, Brown Bears have round, fluffy ears that they will let you pet if you just ask. They even have nice rounded claws to scratch your back whenever you need!</p>
+               <div class="img-magnifier-container">
+                  <img id="myimage" src="Bear Ears.jpg" style="width:100%" alt="Girl">
+               </div>
+               <footer>Zoom in to see the cuteness!</footer>
+               <script>
+                  magnify("myimage", 3);
+               </script>
+            </section>
          
-         <article>
-            <header>
-               <h4>Brown Bears Hate Bear Spray!</h4>
-            </header>
-            <p>Some people may say that its the best bear deterant, but why wouldn't you want a nice bear hug? Brown Bears love to make new connections!</p>
-            <img src= "Bear Hug.jpg" alt= "Woman hugging bear">
-            <footer>Aww, life long friends!</footer>
-         </article>
          
-         <article>
-            <header>
-            <h5>Brown Bears Love Sharing!</h5>
-            </header>
-            <p>Realized you packed too much food for your trip? Just invite your favorite Brown Bear over! Some awful people may tell you it's "safer" to tie it up in a tree. They just hate sharing...and Brown Bears!</p>
-            <img src= "Bear Picnic.jpg" alt= "Happy Family Eating with Bear">
-            <footer>Which one of these people look happier?</footer>
-         </article>
+            <section>
+               <header>
+                  <h1>Brown Bears Don't Eat Meat...All The Time!</h1>
+               </header>
+               <p>Being mostly vegetarian, Brown Bears sometimes eat nasty fish from a stream so you don't have to!</p>
+               <div class="container">
+                  <img src="Bear Eating.jpg" alt="Avatar" class="image">
+                  <div class="overlay">You're Welcome!</div>
+               </div>
+               <footer>How Nice of Them!</footer>
+            </section>
 
-         <article>
-            <header>
-            <h6>Where to Meet Your Own Brown Bear Pal!</h6>
-            </header>
-            <p>Brown Bears live all over the world. They like to live near humans because they are so friendly. Sometimes when they are especially lonely, Brown Bears will leave their numbers on park benches and stalls so that humans can call them directly!</p>
-            <img src= "Bear on Phone.jpg" alt= "Bear in woods on Phone">
-            <footer>For a good time, call Brown Bear!</footer>
-         </article>
+            <section>
+               <header>
+                  <h1>Brown Bears Hate Bear Spray!</h1>
+               </header>
+               <p>Some people may say that its the best bear deterant, but why wouldn't you want a nice bear hug? Brown Bears love to make new connections!</p>
+               <img src= "Bear Hug.jpg" style="width:100%;" alt= "Woman hugging bear">
+               <footer>Aww, life long friends!</footer>
+            </section>
+         
+            <section>
+               <header>
+                  <h1>Brown Bears Love Sharing!</h1>
+               </header>
+               <p>Realized you packed too much food for your trip? Just invite your favorite Brown Bear over! Some awful people may tell you it's "safer" to tie it up in a tree. They just hate sharing...and Brown Bears!</p>
+               <div class="img-comp-container">
+                  <div class="img-comp-img">
+                     <img src="Bearless Picnic.jpg" width="900" height="600">
+                  </div>
+                  <div class="img-comp-img img-comp-overlay">
+                     <img src="Bear Picnic.jpg" width="900" height="600">
+                  </div>
+               </div>
+               <footer>Which one of these people look happier? Slide to Compare.</footer>
+               <script>
+                  initComparisons();
+               </script>
+            </section>
 
-         <h7>As to can see, Brown Bears are Man's real best friend. Many people just want to give Brown Bears a bad name so that they can get more attention.</h7>
-         <p>&#169 Nottabrownbare 2024 </p>
+            <section>
+               <header>
+               <h1>Where to Meet Your Own Brown Bear Pal!</h1>
+               </header>
+               <p>Brown Bears live all over the world. They like to live near humans because they are so friendly. Sometimes when they are especially lonely, Brown Bears will leave their numbers on park benches and stalls so that humans can call them directly!</p>
+               <div class="container">
+                  <img src="Bear on Phone.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">248-434-5508!</div>
+                  </div>
+                </div>
+               <footer>For a good time, call Brown Bear!</footer>
+            </section>
+         
+            <section>
+               <p2 id="testP" class="funParagraph">As you can see, Brown Bears are Man's real best friend. Many people just want to give Brown Bears a bad name so that they can get more attention.</p2>
+            </section>
+         </article>
        </main>
+       <footer id="defNotBear">
+         <p>&copy; Nottabrownbare 2024</p>
+       </footer>
    </body>
 </html>
