@@ -3,9 +3,7 @@
 body {
     margin: 8px;
     display: block;
-    margin: 0;
     padding: 0;
-    display: block;
     background: url('forest.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
