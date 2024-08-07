@@ -1,39 +1,59 @@
 /* Write your CSS here! */
-#mainHeading {
-    color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-}
 
 body {
     margin: 8px;
     display: block;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: url('forest.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container {
-    position: relative;
+#mainHeader {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #57a9db;
+    border-radius: 8px;
+    color:black;
     text-align: center;
-    color: black;
-  }
-
-.top-right {
-    position: absolute;
-    top: 25px;
-    right: 500px;
-  }
-
-.top-right-blurb {
-    position: absolute;
-    top: 80px;
-    right: 500px;
 }
 
-#titleBlurb {
-    font-size: 23px;
+#mainHeading {
+    color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    margin:0;
 }
 
 h1 {
+    max-width: 1000px;
+    margin: 1px auto;
+    padding: 1px;
+    background: #57a9db;
+    color: black;
+    text-align: center;
+}
+
+#title-blurb {
+    margin: 0;
+    color: black;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #57a9db;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
     margin: 0;
@@ -47,17 +67,6 @@ p {
     margin-bottom: 10px;
 }
 
-main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #57a9db;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: black;
-}
-
-
 .img-magnifier-container {
   position: relative;
 }
@@ -67,7 +76,6 @@ main {
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
-  /*Set the size of the magnifier glass:*/
   width: 100px;
   height: 100px;
 }
@@ -78,13 +86,11 @@ footer {
     font-size: 25px;
 }
 
-
 .container {
   position: relative;
   width: 100%;
 
 }
-
 
 .image {
   display: block;
@@ -106,7 +112,6 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 
 .container:hover .overlay {
   opacity: 1;
@@ -134,35 +139,40 @@ footer {
     cursor: ew-resize;
     width: 40px;
     height: 40px;
-    background-color: #000000;
+    background-color: #fa0096;
     opacity: 0.7;
     border-radius: 50%;
   }
 
-  p2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-    margin: 0;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    display: block;
-    background: url('forest.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-    line-height: 1.6;
-}
-
-#defNotBear {
-    text-align: center;
-    font-size: medium;
-    margin: 0;
-    color: white
-}
-
 .funParagraph {
     color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
 
+h3 {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #57a9db;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #57a9db;
+}
+
+p3 {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #57a9db;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+}
